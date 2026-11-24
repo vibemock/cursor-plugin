@@ -29,7 +29,7 @@ Official Cursor plugin for [VibeMock](https://vibemock.bid) — simulate 3rd-par
   - `vibemock_records_list` — inspect captured inbound/outbound payloads and status
 - **Agent Skill (`skills/vibemock/SKILL.md`)**: Multi-project & zero-background-process self-test loop.
 - **Cursor Rule (`rules/vibemock-webhooks.mdc`)**: Context-aware guidance when editing webhook, billing, or callback files.
-- **Slash Command (`commands/test-webhooks.md`)**: `/test-webhooks` end-to-end verification checklist.
+- **Slash Command (`commands/vibemock-test.md`)**: `/vibemock-test` end-to-end verification checklist.
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ Official Cursor plugin for [VibeMock](https://vibemock.bid) — simulate 3rd-par
 ## Quick Start
 
 1. Open your project in Cursor and ensure the `vibemock` MCP server is enabled.
-2. Run `/test-webhooks` in Cursor Chat, or paste the example prompt below.
+2. Run `/vibemock-test` in Cursor Chat, or paste the example prompt below.
 3. For manual or team installation without the Marketplace, clone this repository and add the folder in Cursor via **Settings → Plugins**.
 
 ### Example Cursor Prompt

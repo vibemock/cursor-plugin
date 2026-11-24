@@ -1,5 +1,5 @@
 ---
-name: test-webhooks
+name: vibemock-test
 description: Run an end-to-end VibeMock webhook and 3rd-party API verification loop (happy path, sync_fail, and callback_drop) against localhost.
 ---
 
