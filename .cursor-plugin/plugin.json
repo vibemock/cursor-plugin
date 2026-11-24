@@ -1,0 +1,26 @@
+{
+  "name": "vibemock",
+  "displayName": "VibeMock — API & Signed Webhook Testing",
+  "description": "Simulate 3rd-party APIs and deliver protocol-accurate signed webhooks (compatible with Stripe, GitHub, Svix, and standard HMAC formats) directly to localhost without local tunnels.",
+  "version": "1.2.0",
+  "author": {
+    "name": "VibeMock"
+  },
+  "homepage": "https://vibemock.bid",
+  "repository": "https://github.com/vibemock/cursor-plugin",
+  "license": "Apache-2.0",
+  "logo": "assets/logo.svg",
+  "keywords": [
+    "vibemock",
+    "webhooks",
+    "webhook-testing",
+    "api-mocking",
+    "hmac",
+    "integration-testing",
+    "mcp"
+  ],
+  "skills": "skills/",
+  "rules": "rules/",
+  "commands": "commands/",
+  "mcpServers": "mcp.json"
+}

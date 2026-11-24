@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vibemock": {
+      "command": "npx",
+      "args": ["-y", "@vibemock/cli@latest", "mcp"]
+    }
+  }
+}

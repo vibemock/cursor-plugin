@@ -1,0 +1,20 @@
+---
+description: Use VibeMock MCP tools or CLI to simulate 3rd-party APIs and verify signed webhooks end-to-end without local tunnels
+globs:
+  - "**/*webhook*"
+  - "**/*stripe*"
+  - "**/*billing*"
+  - "**/*callback*"
+  - "**/.vibemock.json"
+alwaysApply: false
+---
+
+# VibeMock Webhook & API Testing Rules
+
+When implementing, debugging, or testing 3rd-party API integrations or webhook handlers:
+
+1. **Prefer VibeMock MCP tools (`vibemock_*`)** when available; otherwise use the `vibemock` CLI with `--json`.
+2. **Isolate per-project state** via `.vibemock.json` (`vibemock_init_project` or `vibemock init`). Never commit API tokens (`vmk_ins_*`) into `.vibemock.json` or any repository file—tokens belong only in `~/.config/vibemock/config.json` or `VIBEMOCK_TOKEN`.
+3. **Never add custom auth headers** to mock traffic. Swap only the 3rd-party `BASE_URL` to the issued `https://{env}--{appid}--{token}.vibemock.bid` URL.
+4. **Use the zero-background-process sync loop**: configure `local://cli`, trigger your local code, then call `vibemock_forward_once` (or `vibemock forward --once`) synchronously. For inbound-only webhooks without a preceding API request, use `vibemock_trigger_webhook`.
+5. **Verify failure modes**: test `success`, `sync_fail`, and `callback_drop` (plus signature verification) using synthetic test data only.
