@@ -59,6 +59,14 @@ create a stripe-checkout mock app, issue a short-lived Mock URL, and run the ful
 - Use synthetic test payloads and fake signing secrets only — never send production secrets or real customer PII.
 - Inspect API tokens (`vmk_ins_...`) are stored locally in `~/.config/vibemock/config.json` or `VIBEMOCK_TOKEN` and are never committed to project repositories.
 
+## Support & Contributions
+
+This repository is an official distribution mirror maintained from VibeMock's internal monorepo.
+
+- **Bug reports & feature requests**: Please open an issue on [GitHub Issues](https://github.com/vibemock/cursor-plugin/issues).
+- **Pull requests**: External pull requests are not accepted on this distribution repository.
+- **License**: Licensed under the [Apache License 2.0](./LICENSE).
+
 ---
 
 *VibeMock is an independent developer tool and is not affiliated with Stripe, GitHub, Svix, Creem, Lemon Squeezy, or Clerk.*
